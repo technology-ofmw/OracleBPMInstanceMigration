@@ -18,6 +18,8 @@ This schema file define the migration tasks [alterflow, flowUpdate, data Update 
 	 4. After_migration_Flow_trace.jpeg - Flow trace show the migrated instance gone to stale state.
 	 5. After_migration_Aduit_trail_Payload.jpeg - Audit trail show the Instance Moved to new/target activity.
 
+The complete article can be found in my blog [http://technology-oraclefmw.com](http://technology-oraclefmw.com/oracle-bpm-instance-migration/).
+
 
 
 
