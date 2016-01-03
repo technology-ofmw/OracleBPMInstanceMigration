@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="aamig11humantask1project" ClientType="Generic">
+  <pageMap>
+    <page path="/aaMig11Humantask1_Form.jspx"
+          usageId="aamig11humantask1project_aaMig11Humantask1_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="aamig11humantask1project_aaMig11Humantask1_FormPageDef"
+          path="aamig11humantask1project.pageDefs.aaMig11Humantask1_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="aaMig11Humantask1Project_aaMig11Humantask1"
+        path="aamig11humantask1project.aaMig11Humantask1Project_aaMig11Humantask1"/>
+  </dataControlUsages>
+</Application>

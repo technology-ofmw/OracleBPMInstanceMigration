@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="instance_migration" basedir="." default="main">
+ <import file="${basedir}/bin/ant-composite-instance-migration.xml"/>
+ <property file="${basedir}/locator.properties"/>
+ <property name="reports.dir" value="${basedir}/migration_report"/>
+ <property name="plan.dir" value="${basedir}/migration_plan/"/>
+ <locatorConfig id="c1" host="172.22.45.220" port="12221" user="sbai021"
+                password="welcome1"/>
+ <target name="do.migrate" depends="init">
+  <compositeInstanceFilterDef id="all.instance"
+                              compositedn="default/aaMig11Project!1.0"
+                              compositeinstanceid="3340016"/>
+  <locatorSession configid="c1">
+   <migrateCompositeInstances filterid="all.instance" revision="2.0"
+                              migrationplan="${plan.dir}/migration_plan.xml"
+                              outputfile="${reports.dir}/migration_result.xml"/>
+  </locatorSession>
+ </target>
+ <target name="generate.report" depends="init">
+  <compositeInstanceFilterDef id="specific.instance"
+                              compositedn="default/aaMig11Project!1.0"
+                              compositeinstanceid="3340007"/>
+  <locatorSession configid="c1">
+   <generateMigrationReport filterid="specific.instance" revision="2.0"
+                            outputfile="${reports.dir}/migration_report.xml"/>
+  </locatorSession>
+ </target>
+ <target name="init">
+  <mkdir dir="${reports.dir}"/>
+ </target>
+ <target name="clean">
+  <delete dir="${reports.dir}" includes="**/*"/>
+ </target>
+ <!-- <target name="main" depends="clean, init, generate.report"/> -->
+ <target name="main" depends="do.migrate"/>
+</project>

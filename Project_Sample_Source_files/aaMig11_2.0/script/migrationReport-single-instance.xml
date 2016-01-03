@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<migrationReport>
+  <targetRevision>2.0</targetRevision>
+  <feasibility>Manual</feasibility>
+  <compositeInstanceCount>1</compositeInstanceCount>
+  <compositeInstances>
+    <compositeId>3340007</compositeId>
+    <compositeDn>default/aaMig11Project!1.0</compositeDn>
+    <targetRevision>2.0</targetRevision>
+    <feasibility>Manual</feasibility>
+    <componentInstanceCount>2</componentInstanceCount>
+    <componentInstances>
+      <componentInstance>
+        <componentId>workflow:750989</componentId>
+        <componentName>aaMig11Humantask1</componentName>
+        <migrationFeasibility>Automatic</migrationFeasibility>
+      </componentInstance>
+      <componentInstance>
+        <componentId>bpmn:2950007</componentId>
+        <componentName>AaMig11Process</componentName>
+        <incompatibilityReason>- Flow element 'UserTask' removed</incompatibilityReason>
+        <migrationFeasibility>Manual</migrationFeasibility>
+      </componentInstance>
+    </componentInstances>
+  </compositeInstances>
+</migrationReport>

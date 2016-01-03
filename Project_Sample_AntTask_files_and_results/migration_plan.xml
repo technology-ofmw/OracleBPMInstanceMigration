@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mig:migrationPlan xmlns:mig="http://xmlns.oracle.com/bpm/migration">
+  <componentMigrationPlan componentDN="default/AAInstanceMigProject!1.0/AAInstanceMigProcess">
+    <alt:alterflow xmlns:alt="http://xmlns.oracle.com/bpmn/alterflow">
+      <migrateInstance>true</migrateInstance>
+      <validateVariables>false</validateVariables>
+      <flowUpdate>
+        <source>
+          <id>ACT12186829035695</id>
+          <displayName>UserTask</displayName>
+          <processId>AAInstanceMigProcess</processId>
+        </source>
+        <target>
+          <id>ACT12186957014929</id>
+          <displayName>UserTask1</displayName>
+          <processId>AAInstanceMigProcess</processId>
+        </target>
+      </flowUpdate>
+      <batchSize>3</batchSize>
+      <processDN>default/AAInstanceMigProject!1.0*/AAInstanceMigProcess</processDN>
+      <comments>migration to new revision</comments>
+      <resumeInstance>false</resumeInstance>
+      <migrateInstanceInResume>false</migrateInstanceInResume>
+    </alt:alterflow>
+  </componentMigrationPlan>
+</mig:migrationPlan>
+
+

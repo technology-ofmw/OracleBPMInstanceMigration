@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<hwTaskFlows xmlns="http://xmlns.oracle.com/bpel/workflow/hwTaskFlowProperties">
+   <ApplicationName>worklist</ApplicationName>
+   <LookupType>LOCAL</LookupType>
+   <TaskFlowDeploy>false</TaskFlowDeploy>
+   <TaskFlowServer>
+      <hostName/>
+      <httpPort/>
+      <httpsPort/>
+   </TaskFlowServer>
+<PartitionName>default</PartitionName><hwTaskFlow><WorkflowName>aaMig11Humantask2</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/aaMig11/aaMig11Project/aaMig11Humantask2</TaskDefinitionNamespace><TaskFlowId>aaMig11Humantask2_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/aaMig11Humantask2_TaskFlow.xml</TaskFlowFileName></hwTaskFlow></hwTaskFlows>

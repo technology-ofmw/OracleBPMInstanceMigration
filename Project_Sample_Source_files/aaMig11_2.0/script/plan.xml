@@ -1,0 +1,34 @@
+<mig:migrationPlan xmlns:mig="http://xmlns.oracle.com/bpm/migration">
+  <!--Optional:-->
+  <compositeMigrationPlan>
+  </compositeMigrationPlan>
+  <!--Zero or more repetitions:-->
+  <componentMigrationPlan componentDN="default/aaMig11Project!1.0/AaMig11Process">
+      <alt:alterflow xmlns:alt="http://xmlns.oracle.com/bpmn/alterflow">
+        <!--Optional:-->
+        <migrateInstance>true</migrateInstance>        
+        <validateVariables>false</validateVariables>
+        <!--Zero or more repetitions:-->
+        <flowUpdate>
+          <source>
+            <id>ACT12283764103334</id>
+            <displayName>UserTask</displayName>
+          </source>
+          <target>
+            <id>ACT12283799427689</id>
+            <displayName>UserTask2</displayName>
+          </target>
+        </flowUpdate>
+        <!--Optional:-->
+        <batchSize>3</batchSize>
+        <!--Optional:-->
+        <processDN>default/aaMig11Project!1.0*/AaMig11Process</processDN>
+        <!--Optional:-->
+        <comments>migration to new revision</comments>
+        <!--Optional:-->
+        <resumeInstance>false</resumeInstance>
+        <!--Optional:-->
+        <migrateInstanceInResume>false</migrateInstanceInResume>
+      </alt:alterflow>
+  </componentMigrationPlan>
+</mig:migrationPlan>

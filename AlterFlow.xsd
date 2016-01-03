@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://xmlns.oracle.com/bpmn/alterflow" targetNamespace="http://xmlns.oracle.com/bpmn/alterflow">
+
+  <xs:element name="alterflow" type="alterflow"/>
+
+  <xs:complexType name="alterflow">
+    <xs:sequence>
+      <xs:element name="migrateInstance" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="dataObjectUpdate" type="dataUpdate" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="instanceAttributeUpdate" type="dataUpdate" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="correlationKeyUpdate" type="correlationKeyUpdate" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="validateVariables" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flowUpdate" type="flowUpdate" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="batchSize" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="processDN" type="xs:string" minOccurs="0"/>
+      <xs:element name="comments" type="xs:string" minOccurs="0"  maxOccurs="1"/>
+      <xs:element name="resumeInstance" type="xs:boolean" minOccurs="0"  maxOccurs="1"/>
+      <xs:element name="migrateInstanceInResume" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="flowUpdate">
+    <xs:sequence>
+      <xs:element name="source" type="activity"/>
+      <xs:element name="target" type="activity"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="activity">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="displayName" type="xs:string"/>
+      <xs:element name="processId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dataUpdate">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="correlationKeyUpdate">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="reset" type="xs:boolean"/>
+      <xs:element name="properties" type="propertyUpdate" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="propertyUpdate">
+    <xs:sequence>
+      <xs:element name="name" type="xs:QName"/>
+      <xs:element name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+</xs:schema>
+

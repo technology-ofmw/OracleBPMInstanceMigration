@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.97" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="AaMig11Process">
+        <topicDocumentations>
+            <topicDocumentation name="AaMig11Process">
+                <labels>
+                    <label locale="en">aaMig11Process</label>
+                </labels>
+                <descriptions>
+                    <description locale="en">aaMig11Process</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12283762302497">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12283762302430">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12283799427689">
+                <labels>
+                    <label locale="en">UserTask2</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf11"/>
+            <topicDocumentation name="sf14"/>
+        </topicDocumentations>
+    </component>
+</processDocumentation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<migrationResultsReport>
+  <targetRevision>3.0</targetRevision>
+  <compositeCount>1</compositeCount>
+  <failedCount>0</failedCount>
+  <failedInstances></failedInstances>
+  <migratedCount>1</migratedCount>
+  <migratedInstances>
+    <id>3110033</id>
+    <compositeDn>default/AAInstanceMigProject!1.0</compositeDn>
+    <targetRevision>3.0</targetRevision>
+    <componentInstances>
+      <componentInstance>
+        <id>bpmn:2770033</id>
+        <name>AAInstanceMigProcess</name>
+        <type>bpmn</type>
+      </componentInstance>
+      <componentInstance>
+        <id>workflow:730895</id>
+        <name>UserTask</name>
+        <type>workflow</type>
+      </componentInstance>
+    </componentInstances>
+  </migratedInstances>
+</migrationResultsReport>
